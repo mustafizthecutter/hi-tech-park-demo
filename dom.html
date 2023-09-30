@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <style>
         ul>li {
-            color: chocolate
+            color: darkmagenta;
         }
 
         .fruits-container li {
@@ -23,11 +23,11 @@
     </header>
     <main>
         <section>
-            <h1>dom tech enthusiasts part-1</h1>
+            <h1 id="cats-name" class="cats-fat blue-bg text-align">dom tech enthusiasts part-1</h1>
             <ul>
-                <li>dom</li>
-                <li>html</li>
-                <li>css</li>
+                <li>montu</li>
+                <li>jontu</li>
+                <li>santu</li>
             </ul>
         </section>
         <section class="fruits-container">
@@ -49,41 +49,42 @@
                 <li>css</li>
             </ul>
         </section>
-        <section>
+        <section id="friends-container" class="large-text">
             <h1>dom part-4</h1>
             <ul>
-                <li>dom</li>
-                <li>html</li>
-                <li>css</li>
+                <li>farin</li>
+                <li>nobo</li>
+                <li>liza</li>
             </ul>
         </section>
     </main>
     <script src="dom.js"></script>
+    <script src="styleInJs.js"></script>
     <script>
-        const liCollection = document.getElementsByTagName('li');
-        for (const li of liCollection) {
-            // console.log(li);
-        }
-        const student = {
-            name: 'santu', age: 24, study: function studyMania(time) {
-                // console.log(time, 'study kortese')
-            }
-        }
-        const fruitsCollection = document.getElementsByClassName('fruit-1')
-        for (const fruit of fruitsCollection) {
-            // console.log(fruit.innerText);
-        }
-        const headingChanged = document.getElementById('fruits-title');
-        // console.log(headingChanged.innerText);
-        headingChanged.innerText = 'santu mere peyare laal re';
-        const techChanged = document.getElementById('tech-title');
-        techChanged.innerText = 'chere de soytan';
-        const fruitsCollection1 = document.querySelectorAll('.fruits-container li')
-        for (const lis of fruitsCollection1) {
-            // console.log(lis.innerText);
-        }
-        const fruitsCollection2 = document.querySelector('.fruits-container li');
-        console.log(fruitsCollection2.innerText);
+        // const liCollection = document.getElementsByTagName('li');
+        // for (const li of liCollection) {
+        //     // console.log(li);
+        // }
+        // const student = {
+        //     name: 'santu', age: 24, study: function studyMania(time) {
+        //         // console.log(time, 'study kortese')
+        //     }
+        // }
+        // const fruitsCollection = document.getElementsByClassName('fruit-1')
+        // for (const fruit of fruitsCollection) {
+        //     // console.log(fruit.innerText);
+        // }
+        // const headingChanged = document.getElementById('fruits-title');
+        // // console.log(headingChanged.innerText);
+        // headingChanged.innerText = 'santu mere peyare laal re';
+        // const techChanged = document.getElementById('tech-title');
+        // techChanged.innerText = 'chere de soytan';
+        // const fruitsCollection1 = document.querySelectorAll('.fruits-container li')
+        // for (const lis of fruitsCollection1) {
+        //     // console.log(lis.innerText);
+        // }
+        // const fruitsCollection2 = document.querySelector('.fruits-container li');
+        // console.log(fruitsCollection2.innerText);
         // for (const list of fruitsCollection2) {
         //     console.log(lis.innerText);
         // }
