@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        ul>li {
+            color: chocolate
+        }
+
+        .fruits-container li {
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>document object model</h1>
+    </header>
+    <main>
+        <section>
+            <h1>dom tech enthusiasts part-1</h1>
+            <ul>
+                <li>dom</li>
+                <li>html</li>
+                <li>css</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title">fruits</h1>
+            <ul>
+                <li class="fruit-1">Apple</li>
+                <li class="fruit-1">Banana</li>
+                <li class="fruit-2">Mango</li>
+                <li class="fruit-1">salad</li>
+                <li class="fruit-1">tormuj</li>
+                <li class="fruit-2">Tango</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="tech-title">dom part-3</h1>
+            <ul>
+                <li>dom</li>
+                <li>html</li>
+                <li>css</li>
+            </ul>
+        </section>
+        <section>
+            <h1>dom part-4</h1>
+            <ul>
+                <li>dom</li>
+                <li>html</li>
+                <li>css</li>
+            </ul>
+        </section>
+    </main>
+    <script src="dom.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        for (const li of liCollection) {
+            // console.log(li);
+        }
+        const student = {
+            name: 'santu', age: 24, study: function studyMania(time) {
+                // console.log(time, 'study kortese')
+            }
+        }
+        const fruitsCollection = document.getElementsByClassName('fruit-1')
+        for (const fruit of fruitsCollection) {
+            // console.log(fruit.innerText);
+        }
+        const headingChanged = document.getElementById('fruits-title');
+        // console.log(headingChanged.innerText);
+        headingChanged.innerText = 'santu mere peyare laal re';
+        const techChanged = document.getElementById('tech-title');
+        techChanged.innerText = 'chere de soytan';
+        const fruitsCollection1 = document.querySelectorAll('.fruits-container li')
+        for (const lis of fruitsCollection1) {
+            // console.log(lis.innerText);
+        }
+        const fruitsCollection2 = document.querySelector('.fruits-container li');
+        console.log(fruitsCollection2.innerText);
+        // for (const list of fruitsCollection2) {
+        //     console.log(lis.innerText);
+        // }
+    </script>
+</body>
+
+</html>
